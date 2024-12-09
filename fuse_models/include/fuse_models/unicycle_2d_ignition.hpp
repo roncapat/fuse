@@ -66,7 +66,7 @@ namespace fuse_models
  * configured on the parameter server.
  *
  * Parameters:
- *  - ~publish_on_startup (bool, default: true) Wether to send an initial state transaction immediately
+ *  - ~publish_on_startup (bool, default: true) Whether to send an initial state transaction immediately
  *                                              (based on ~initial_state amd ~initial_sigma) or not.
  *                                              In the latter case, the plugin will instead reset the
  *                                              optimizer when triggered via topic or service request. 
