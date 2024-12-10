@@ -67,7 +67,7 @@ namespace fuse_models
  *
  * Parameters:
  *  - ~publish_on_startup (bool, default: true) Whether to send an initial state transaction immediately
- *                                              (based on ~initial_state amd ~initial_sigma) or not.
+ *                                              (based on ~initial_state and ~initial_sigma) or not.
  *                                              In the latter case, the plugin will instead reset the
  *                                              optimizer when triggered via topic or service request. 
  *  - ~device_id (uuid string, default: 00000000-0000-0000-0000-000000000000) The device/robot ID to
