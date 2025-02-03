@@ -442,7 +442,7 @@ void FixedLagSmoother::processQueue(
           "The queued transaction with timestamp "
             << element.stamp().nanoseconds() << " and maximum involved stamp of "
             << max_stamp.nanoseconds() << " from sensor " << element.sensor_name
-            << " could not be processed after " << (current_time - max_stamp).nanoseconds()
+            << " could not be processed after " << (current_time - max_stamp).seconds()
             << " seconds, which is greater than the 'transaction_timeout' value of "
             << params_.transaction_timeout.nanoseconds() << ". Ignoring this transaction.");
         transaction_riter = erase(pending_transactions_, transaction_riter);
