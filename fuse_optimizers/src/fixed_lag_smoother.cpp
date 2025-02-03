@@ -416,7 +416,7 @@ void FixedLagSmoother::processQueue(
           << lag_expiration.nanoseconds() << ". The queued transaction with timestamp "
           << element.stamp().nanoseconds() << " from sensor " << element.sensor_name
           << " has a minimum involved timestamp of " << min_stamp.nanoseconds() << ", which is "
-          << (lag_expiration - min_stamp).nanoseconds()
+          << (lag_expiration - min_stamp).seconds()
           << " seconds too old. Ignoring this transaction.");
       transaction_riter = erase(pending_transactions_, transaction_riter);
     } else if (  // NOLINT
